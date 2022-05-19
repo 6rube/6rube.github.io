@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{%- include head.html -%}
+
+<body>
+    {%- include header.html -%}
+    <div class="center incanvasObject">
+        {%- if page.title -%}
+        <h1 class="page-heading">{{ page.title }}</h1>
+        {%- endif -%}
+
+        {{ content }}
+
+        {%- if site.posts.size > 0 -%}
+        <div class="card card-primary">
+            <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+
+            <table class="wt-max">
+                <tbody>
+                    <tr>
+                        <th>Date</th>
+                        <th>Post</th>
+                    </tr>
+                    {%- for post in site.posts -%}
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <tr>
+                        <td>{{ post.date | date: date_format }}</td>
+                        <td> <a class="" class="active" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
+                    </tr>
+                    {%- if site.show_excerpts -%}
+                    {{ post.excerpt }}
+                    {%- endif -%}
+                    {%- endfor -%}
+
+                </tbody>
+            </table>
+
+        </div>
+        {%- endif -%}
+    </div>
+    {%- include footer.html -%}
+</body>
+
+</html>

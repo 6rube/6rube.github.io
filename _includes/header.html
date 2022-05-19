@@ -1,0 +1,6 @@
+<div id="myIncavas" class="incanvas">
+    {%- include logo.html -%}
+    {%- for page in site.pages -%}
+    <a class="btn clickable" class="active" href="{{page.url}}">{{page.name}}</a>
+    {%- endfor -%}
+</div>
