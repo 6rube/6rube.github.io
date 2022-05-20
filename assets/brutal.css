@@ -11,8 +11,35 @@
   --thic: 8px;
   --basepadding: 2.5%;
   --baseboderradius: 8px;
+  --basemargin: 0.5%;
 }
 
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  text-align: left;
+  background-color: var(--white);
+  color: var(--dark);
+  padding: var(--basepadding);
+  border-radius: var(--baseboderradius);
+}
+li {
+  counter-increment: my-awesome-counter;
+  margin: 0.25rem;
+}
+li::before {
+  content: counter(my-awesome-counter);
+  background: var(--dark);
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--baseboderradius);
+  display: inline-block;
+  line-height: 2rem;
+  color: var(--white);
+  text-align: center;
+  margin-right: 0.5rem;
+}
 
 body {
   background-color: var(--dark);
@@ -547,7 +574,7 @@ input[type="file"] {
 
 .incanvasObject {
   margin-left: 25%;
-  padding: 1px 16px;
+  padding: 0px 0px;
   height: 1000px;
 }
 
