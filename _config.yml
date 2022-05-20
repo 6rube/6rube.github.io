@@ -28,7 +28,7 @@ url: "6rube.github.io" # the base hostname & protocol for your site, e.g. http:/
 github_username:  6rube
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 

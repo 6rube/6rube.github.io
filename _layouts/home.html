@@ -23,7 +23,7 @@
                         <th>Post</th>
                     </tr>
                     {%- for post in site.posts -%}
-                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    {%- assign date_format = site.brutal.date_format | default: "%b %-d, %Y" -%}
                     <tr>
                         <td>{{ post.date | date: date_format }}</td>
                         <td> <a class="" class="active" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>

@@ -1,6 +1,8 @@
 <div id="myIncavas" class="incanvas">
-    {%- include logo.html -%}
+    <div class="card card-primary">{%- include logo.html -%}</div>
     {%- for page in site.pages -%}
-    <a class="btn clickable" class="active" href="{{page.url}}">{{page.name}}</a>
+        {%- if page.name != "style.scss" and page.name != "/feed.xml" -%}
+        <a class="btn clickable" class="active" href="{{page.url}}">{{page.name}}</a>
+        {%- endif -%}
     {%- endfor -%}
 </div>
