@@ -5,37 +5,22 @@
 
 <body>
     {%- include header.html -%}
-    <div class="center incanvasObject">
-        {%- if page.title -%}
-        <h1 class="page-heading">{{ page.title }}</h1>
-        {%- endif -%}
-
-        {{ content }}
-
+    <div class="incanvasObject">
         {%- if site.posts.size > 0 -%}
-        <div class="card card-primary">
-            <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-
-            <table class="wt-max">
-                <tbody>
-                    <tr>
-                        <th>Date</th>
-                        <th>Post</th>
-                    </tr>
-                    {%- for post in site.posts -%}
-                    {%- assign date_format = site.brutal.date_format | default: "%b %-d, %Y" -%}
-                    <tr>
-                        <td>{{ post.date | date: date_format }}</td>
-                        <td> <a class="" class="active" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
-                    </tr>
-                    {%- if site.show_excerpts -%}
-                    {{ post.excerpt }}
-                    {%- endif -%}
-                    {%- endfor -%}
-
-                </tbody>
-            </table>
-
+        <div class="grid">
+            {%- for post in site.posts -%}
+            {%- assign date_format = site.brutal.date_format | default: "%b %-d, %Y" -%}
+            <a href="{{ post.url | relative_url }}"> 
+                <div class="showcase">
+                    <div class="showcase-image"><img src="{{ post.img | relative_url }}" alt="default"></div>
+                    <p>{{ post.date | date: date_format }}</p>
+                    <p>{{ post.title | escape }}</p>
+                </div>
+            </a>
+            {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+            {%- endif -%}
+            {%- endfor -%}
         </div>
         {%- endif -%}
     </div>
