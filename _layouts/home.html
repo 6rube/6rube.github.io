@@ -6,6 +6,9 @@
 <body>
     {%- include header.html -%}
     <div class="incanvasObject">
+        <div class="card card-primary">
+            <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+        </div>
         {%- if site.posts.size > 0 -%}
         <div class="grid">
             {%- for post in site.posts -%}

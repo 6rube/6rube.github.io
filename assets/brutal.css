@@ -620,6 +620,9 @@ input[type="file"] {
   transition: 0.5s;
   padding-top: var(--basepadding);
 }
+.offcanvas .btn{
+  background-color: var(--darkhighlight);
+}
 
 .showcase{
   border-radius: var(--baseboderradius);
