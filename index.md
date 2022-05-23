@@ -1,4 +1,4 @@
 ---
 layout: home
-icon: /assets/home.svg
+icon: /assets/ico/home.svg
 ---

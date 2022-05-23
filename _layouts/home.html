@@ -5,12 +5,12 @@
 
 <body>
     {%- include header.html -%}
-    <div class="incanvasObject">
-        <div class="card card-primary">
+    <div class="center incanvasObject content">
+        <div class="card card-primary" style="width:99%">
             <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
         </div>
         {%- if site.posts.size > 0 -%}
-        <div class="grid">
+        <div class="grid" style="padding-left: 5px!important; padding-right: 5px!important; width:99%">
             {%- for post in site.posts -%}
             {%- assign date_format = site.brutal.date_format | default: "%b %-d, %Y" -%}
             <a href="{{ post.url | relative_url }}"> 
