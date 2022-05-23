@@ -223,7 +223,6 @@ table tr td {
   border-radius: var(--baseboderradius);
   padding: var(--basepadding) !important;
   margin: 5px;
-  padding: 10px;
   width: fit-content;
   display: inline-block;
   width: 95%;
@@ -461,11 +460,10 @@ input[type="file"] {
 /* Grid */
 
 .grid {
-  margin: 1.5em 0;
   padding: 0;
-  -moz-column-gap: 1.5em;
-  -webkit-column-gap: 1.5em;
-  column-gap: 1.5em;
+  -moz-column-gap: 5px;
+  -webkit-column-gap: 5px;
+  column-gap: 5px;
   font-size: .85em;
 }
 
@@ -592,8 +590,9 @@ input[type="file"] {
   border-radius: var(--baseboderradius);
   display: block;
   padding: var(--basepadding);
-  margin: var(--basepadding);
   text-decoration: none;
+  width: 89%;
+  margin: 5px;
 }
 
 .incanvas a.active {

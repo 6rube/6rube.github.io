@@ -3,7 +3,7 @@ layout: post
 title: "First push for Github Pages"
 date: 2022-05-19
 cetegories: jekyll
-img: /assets/placeholder.svg
+img: /assets/1.svg
 ---
 First push for Github Pages.
 

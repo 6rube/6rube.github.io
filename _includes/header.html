@@ -4,7 +4,7 @@
     <div class="card card-primary">{%- include logo.html -%}</div>
     {%- for page in site.pages -%}
         {%- if page.name != "style.scss" and page.name != "/feed.xml" -%}
-        <a class="btn clickable" class="active" href="{{page.url}}">{{page.name}}</a>
+        <a class="btn clickable" class="active" style="padding-right: var(--basepadding);"href="{{page.url}}"><img src="{{page.icon}}" style="width: 15px; height: 15x"> {{page.name}}</a>
         {%- endif -%}
     {%- endfor -%}
 </div>
