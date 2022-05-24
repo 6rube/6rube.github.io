@@ -15,7 +15,7 @@
             {%- assign date_format = site.brutal.date_format | default: "%b %-d, %Y" -%}
             <a href="{{ post.url | relative_url }}"> 
                 <div class="showcase">
-                    <div class="showcase-image"><img src="{{ post.img | relative_url }}" alt="default"></div>
+                    <div class="showcase-image"><img src="{{ post.img | relative_url }}" alt="{{post.title}}_IMG"></div>
                     <p>{{ post.date | date: date_format }}</p>
                     <p>{{ post.title | escape }}</p>
                 </div>

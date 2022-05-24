@@ -50,6 +50,24 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+pre {
+  display:flexbox;
+  text-align: left;
+  background-color: var(--darkhighlight);
+  padding: var(--basepadding);
+  border-radius: var(--baseboderradius);
+  overflow: auto;
+}
+
+.card pre{
+  background-color: var(--dark);
+}
+
+a{
+  padding: 5px;
+}
+
 /* unvisited link */
 a:link {
   color: var(--secondary)
@@ -61,8 +79,9 @@ a:visited {
 }
 
 /* mouse over link */
-a:hover {
-  color: var(--primary)
+.card a:hover{
+    background-color: var(--dark);
+    border-radius: 5px;
 }
 
 /* selected link */

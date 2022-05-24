@@ -2,7 +2,6 @@
   //Offcanvas toggles
   offcanvasToggle = document.getElementsByClassName("offcanvas-toogle")
   function toggleOffcanvas(event){
-    console.log(event)
     var a = event.path[0].attributes
     var tg = document.getElementById(a.getNamedItem('target').value)
     tg.style.width = "250px";
@@ -32,11 +31,9 @@ function incanvas(){
         inlist[i].classList = "offcanvas"
       }
       var inOlist = document.getElementsByClassName('incanvasObject')
-      console.log(inOlist)
       inOlist[0].classList = "center"
     } 
     else {
-    console.log(inlist)
     if(inlist.length != 0){
       togglebtn[0].innerHTML = ""
     }

@@ -4,9 +4,11 @@
     <div class="card card-primary">{%- include logo.html -%}</div>
     {%- for page in site.pages -%}
     {%- if page.name != "style.scss" and page.name != "/feed.xml" -%}
-        <div style="display:grid">
-            <a class="btn clickable" class="active" style="padding-right: var(--basepadding);" href="{{page.url}}"><img
-               calss="ico" src="{{page.icon}}" style="width: 2vh; height: 2vh"> {{page.name}}</a>
+        <div style="display:grid;">
+            <a class="btn clickable" class="active" style="padding-right: var(--basepadding);" href="{{page.url}}">
+                <img calss="ico" src="{{page.icon}}" alt="{{page.icon}}" style="width: 2vh; height: 2vh; vertical-align:middle"> 
+                <span style="vertical-align:middle">{{page.name}}</span>
+            </a>
         </div>
     {%- endif -%}
     {%- endfor -%}

@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
-<div class="card">
+<div class="card" style="width:99%">
     <h2>{{page.title}}</h2>
     <img src="{{ page.img | relative_url }}" style="width: 50%; border-radius: 8px;" alt="default">
     {%- assign date_format = site.brutal.date_format | default: "%b %-d, %Y" -%}
     <p>{{ page.date | date: date_format }}</p>
 </div>
-<div class="card card-primary">
+<div class="card card-primary" style="width:99%">
     {{ content }}
 </div>
 <div>
-    <div class="card card-primary">
+    <div class="card card-primary" style="width:99%">
         {{page.categories}}
     </div>
 </div>
