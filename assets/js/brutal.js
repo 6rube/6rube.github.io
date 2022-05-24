@@ -35,7 +35,7 @@ function incanvas(){
     } 
     else {
     if(inlist.length != 0){
-      togglebtn[0].innerHTML = ""
+      togglebtn[0].outerHTML = ""
     }
   }
 }
