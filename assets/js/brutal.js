@@ -1,4 +1,3 @@
-
   //Offcanvas toggles
   offcanvasToggle = document.getElementsByClassName("offcanvas-toogle")
   function toggleOffcanvas(event){

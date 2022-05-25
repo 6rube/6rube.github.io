@@ -17,7 +17,7 @@
                 <div class="showcase">
                     <div class="showcase-image"><img src="{{ post.img | relative_url }}" alt="{{post.title}}_IMG"></div>
                     <p>{{ post.date | date: date_format }}</p>
-                    <p>{{ post.title | escape }}</p>
+                    <p><b>{{ post.title | escape }}</b></p>
                 </div>
             </a>
             {%- if site.show_excerpts -%}

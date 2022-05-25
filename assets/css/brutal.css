@@ -593,7 +593,7 @@ input[type="file"] {
   }
 
   body {
-    font-size: calc(var(--baseFontSize)+2vw);
+    font-size: calc(var(--baseFontSize)+2.1vw);
   }
 
   .grid {
@@ -621,7 +621,7 @@ input[type="file"] {
   }
 
   body {
-    font-size: var(--baseFontSize);
+    font-size: var(--baseFontSize)+0.5vw;
   }
 
   .gridcontainer {
@@ -794,4 +794,13 @@ blockquote {
   text-align: left;
   font-style: italic;
   padding: var(--basepadding);
+  border-radius: var(--baseboderradius);
+}
+
+.card blockquote{
+  background-color: var(--dark);
+}
+
+.tag{
+  background-color: var(--primary);
 }
