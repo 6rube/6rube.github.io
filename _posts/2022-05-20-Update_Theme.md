@@ -3,7 +3,7 @@ layout: post
 title: "Theme for Jekyell"
 date: 2022-05-20
 category: jekyll
-img: /assets/img/1.svg
+img: /assets/img/20052022.svg
 ---
 I am currently working on a Theme for Jekyell.
 
