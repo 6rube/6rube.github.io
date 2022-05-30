@@ -48,4 +48,35 @@ icon: /assets/ico/typo.svg
     </code></pre></div></div>
 </div>
 
+<div class="card card-primary" style="width: 99%;">
+    <h2>No Script</h2>
+    <p>I use noscript on the side, so that everyone can display it without having to fear trackers or other stuff like that. 
+        I really hate, that every page nowadays needs 50mb of js to work properly. 
+        You can update your alignments for non js users by adding a style tag if the user disabled it like i did in the following.</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+        &lt;noscript&gt;
+        &lt;style&gt;
+        .incanvas {
+            width: 100%!important;
+            position: absolute !important;
+            height: auto !important;
+            display: contents;
+        }
+        .incanvasObject{
+            margin: 0px !important;
+        }
+        .offcanvas-toogle{
+            display: none;
+        }
+        .offcanvas-close{
+            display: none;
+        }
+        &lt;/style&gt;
+        &lt;/noscript&gt;
+    </code></pre>
+
+    <p>I changed the width of the incanvas to 100% and the position to absolute to display all the content underneath each other.</p>
+
+</div>
+
 <script src="{{ "/assets/js/bionic-formatter.js" | relative_url }}"></script>
