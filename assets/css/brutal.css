@@ -632,6 +632,30 @@ input[type="file"] {
 
 }
 
+h1:hover{
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h2:hover {
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h3:hover {
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h4:hover {
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 /* Dropdownbutton */
 .dropbtn {
