@@ -1,7 +1,7 @@
 <button class="btn clickable offcanvas-toogle" target="myIncavas">Side Menu</button>
 <div id="myIncavas" class="incanvas">
     <button class="btn clickable offcanvas-close" target="myIncavas">Close</button>
-    <div class="card card-primary">{%- include logo.html -%}</div>
+    <div class="title">{%- include logo.html -%}</div>
     {%- for page in site.pages -%}
     {%- if page.name != "style.scss" and page.name != "/feed.xml" -%}
         <div style="display:grid;">
@@ -12,23 +12,4 @@
         </div>
     {%- endif -%}
     {%- endfor -%}
-    <noscript>
-        <style>
-            .incanvas {
-                width: 100%!important;
-                position: absolute !important;
-                height: auto !important;
-                display: contents;
-            }
-            .incanvasObject{
-                margin: 0px !important;
-            }
-            .offcanvas-toogle{
-                display: none;
-            }
-            .offcanvas-close{
-                display: none;
-            }
-        </style>
-    </noscript>
 </div>
