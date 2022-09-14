@@ -2,6 +2,7 @@
   --primary: #ff00ff;
   --secondary: #d832d8;
   --white: #ffffff;
+  --whitebackdrop: #d8d8d8;
   --whiteshadow: #3d3d3d;
   --dark: #272727;
   --darkhighlight: #303030;
@@ -15,6 +16,10 @@
   --baseFontSize: 1vw;
 }
 
+center{
+  padding: 5px;
+  margin: 5px;
+}
 
 ol {
   list-style: none;
@@ -42,6 +47,11 @@ li::before {
   color: var(--white);
   text-align: center;
   margin-right: 0.5rem;
+}
+
+li a:hover{
+  background-color: var(--whitebackdrop)!important;
+  border-radius: 5px;
 }
 
 body {
@@ -239,7 +249,6 @@ table tr td {
 .card {
   border-radius: var(--baseboderradius);
   padding: var(--basepadding) !important;
-  margin: 5px;
   width: fit-content;
   display: inline-block;
   width: 95%;
@@ -249,7 +258,7 @@ table tr td {
   color: var(--white);
   overflow: auto;
   background-color: var(--stdarkhighlight);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   text-align: center;
 }
 
@@ -726,7 +735,7 @@ h4:hover {
   margin-left: 1%;
   width: 25%;
   background-color: var(--stdarkhighlight);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   border-radius: var(--baseboderradius);
   position: fixed;
   height:96%;
@@ -769,15 +778,14 @@ h4:hover {
   top: 0;
   left: 0;
   background-color: var(--stdarkhighlight);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: var(--basepadding);
 }
 
-.offcanvas .btn {
-  background-color: var(--darkhighlight);
-  margin: 5px;
+.offcanvas .clickable{
+  color: var(--white);
 }
 
 .showcase {
@@ -791,7 +799,7 @@ h4:hover {
   color: var(--white);
   overflow: auto;
   background-color: var(--stdarkhighlight);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   text-align: center;
 }
 

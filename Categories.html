@@ -1,0 +1,15 @@
+---
+layout: default
+icon: /assets/ico/category.svg
+---
+
+<div class="card card-primary">
+    {% for ctaegorie in site.categories %}
+    <h3>{{ ctaegorie[0] }}</h3>
+    <ol>
+        {% for post in ctaegorie[1] %}
+        <li><a href="{{ post.url }}">{{ post.title }} | {{ post.date | date: "%b %d, %Y" }} </a></li>
+        {% endfor %}
+    </ol>
+    {% endfor %}
+</div>
