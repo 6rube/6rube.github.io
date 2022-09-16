@@ -12,6 +12,9 @@ layout: default
 </div>
 <div>
     <div class="card card-primary" style="width:99%">
-        {{page.categories}}
+        
+        {%- for categorie in page.categories -%}
+            <a href="{{site.url}}/Categories.html#jump_{{categorie}}">{{categorie}}</a>
+        {%- endfor -%}
     </div>
 </div>

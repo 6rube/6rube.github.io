@@ -2,14 +2,14 @@
 <div id="myIncavas" class="incanvas">
     <button class="btn clickable offcanvas-close" target="myIncavas">Close ◄</button>
 
-    <center>Update: {{site.time | date: "%b %d, %Y" }}</center>
+    <center class="barcode_font">{{site.time | date: "%b %d, %Y" }}</center>
 
     <div class="title">{%- include logo.html -%}</div>
 
     {%- for page in site.pages -%}
     {%- if page.name != "style.scss" and page.name != "/feed.xml" -%}
         <div style="display:grid;">
-            <a class="btn clickable" class="active" style="padding-right: var(--basepadding);" href="{{page.url}}">
+            <a class="btn clickable" class="active" style="width: 91%;" href="{{page.url}}">
                 <img calss="ico" src="{{page.icon}}" alt="{{page.icon}}" style="width: 2vh; height: 2vh; vertical-align:middle"> 
                 <span style="vertical-align:middle">&nbsp;{{page.name}}</span>
             </a>

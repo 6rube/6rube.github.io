@@ -738,7 +738,7 @@ h4:hover {
   backdrop-filter: blur(15px);
   border-radius: var(--baseboderradius);
   position: fixed;
-  height:96%;
+  height:98%;
   overflow: auto;
 }
 
@@ -850,4 +850,14 @@ blockquote {
 
 .tag{
   background-color: var(--primary);
+}
+
+@font-face {
+  font-family: Barcode;
+  src: url("../Barcode-Regular.ttf") format("opentype");
+}
+
+.barcode_font{
+  font-family: "Barcode", serif;
+  font-size: 2rem;
 }

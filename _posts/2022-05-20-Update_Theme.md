@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Theme for Jekyell"
+title: "Theme for Jekyll"
 date: 2022-05-20
 category: jekyll
 img: /assets/img/20052022.svg
 ---
-I am currently working on a Theme for Jekyell.
+I am currently working on a Theme for Jekyll.
 
 It is already supporting mobile devices.
 
