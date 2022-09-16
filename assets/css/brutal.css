@@ -148,14 +148,11 @@ a:link {
 .text {
   align-items: center;
   display: inline-flex;
-  font-family: 'Roboto', sans-serif;
   overflow: hidden;
-  padding: 10px;
   background-color: var(--darkhighlight);
-  border: none;
-  border-bottom: 3px solid var(--white);
-  border-radius: 8px;
   color: var(--white);
+  padding: var(--basepadding);
+  border-radius: var(--baseboderradius);
 }
 
 .text:focus {
@@ -860,4 +857,14 @@ blockquote {
 .barcode_font{
   font-family: "Barcode", serif;
   font-size: 2rem;
+}
+
+.color-primary{
+  color: var(--primary);
+}
+
+.badge{
+  width: 2vh;
+  height: 2vh;
+  vertical-align:middle;
 }
