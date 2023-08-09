@@ -38,7 +38,7 @@ height: 100vh;
 top: 0;
 left: 0;
 overflow: hidden;
-background-color: #4b1b57;
-opacity: 1;
-background: linear-gradient(135deg, #2b398f55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #2b398f 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #2b398f55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #2b398f 25%, #4b1b57 25%) 0px 0/ 80px 80px;
+background-color: #000000;
+background-image: url(/assets/img/new_bg.svg);
+ background-size: cover;
 }
