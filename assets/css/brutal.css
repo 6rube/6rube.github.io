@@ -3,10 +3,11 @@
   --secondary: #d832d8;
   --white: #ffffff;
   --whitebackdrop: #d8d8d8;
-  --whiteshadow: #3d3d3d;
-  --dark: #272727;
-  --darkhighlight: #303030;
-  --stdarkhighlight: rgba(36, 36, 36, 0.5);
+  --whiteshadow: #0057FF;
+  --dark: #213C70;
+  --darkhighlight: #172541;
+
+  --stdarkhighlight: rgba(23, 37, 65, 0.5);
   --stwhite: rgba(255, 255, 255, 0.5);
   --thin: 3px;
   --thic: 8px;
@@ -727,6 +728,7 @@ h4:hover {
 /* Incanvas */
 
 .incanvas {
+  top: 1%;
   list-style-type: none;
   padding: 0 !important;
   margin-left: 1%;

@@ -42,3 +42,16 @@ background-color: #000000;
 background-image: url(/assets/img/bg.svg);
  background-size: cover;
 }
+
+.feed{
+  background-color: var(--primary);
+  color: var(--dark);
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.date{
+  text-align: center;
+}
