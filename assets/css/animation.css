@@ -52,6 +52,12 @@ background-image: url(/assets/img/bg.svg);
   text-align: center;
 }
 
+.feed .f{
+  padding: 15px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
 .date{
   text-align: center;
 }
