@@ -34,7 +34,7 @@ body {
 .background {
 position: fixed;
 width: 100vw;
-height: 100vh;
+height: 110vh;
 top: 0;
 left: 0;
 overflow: hidden;
@@ -44,7 +44,6 @@ background-image: url(/assets/img/bg.svg);
 }
 
 .feed{
-  background-color: var(--primary);
   color: var(--dark);
   bottom: 0px;
   position: absolute;

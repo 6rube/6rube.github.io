@@ -1,9 +1,10 @@
   //Offcanvas toggles
   offcanvasToggle = document.getElementsByClassName("offcanvas-toogle")
   function toggleOffcanvas(event){
-    var a = event.path[0].attributes
-    var tg = document.getElementById(a.getNamedItem('target').value)
-    tg.style.width = "250px";
+    //var a = event.path[0].attributes
+    //var tg = document.getElementById(a.getNamedItem('target').value)
+    document.getElementById("myIncavas").style.width = "250px"
+    //tg.style.width = "250px";
   }
   for (let element of offcanvasToggle){
     element.addEventListener('click', toggleOffcanvas)
@@ -11,9 +12,10 @@
 
   offcanvasClose = document.getElementsByClassName("offcanvas-close")
   function CloseOffcanvas(event){
-    var a = event.path[0].attributes
-    var tg = document.getElementById(a.getNamedItem('target').value)
-    tg.style.width = "0";
+    //var a = event.path[0].attributes
+    //var tg = document.getElementById(a.getNamedItem('target').value)
+    //tg.style.width = "0";
+    document.getElementById("myIncavas").style.width = "0"
   }
   for (let element of offcanvasClose){
     element.addEventListener('click', CloseOffcanvas)
