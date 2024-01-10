@@ -802,6 +802,22 @@ h4:hover {
   text-align: center;
 }
 
+.showcase:hover {
+  /* background-color: var(--dark); */
+  animation-name: showcase_growth; 
+  animation-duration: 0.5s; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes showcase_growth {
+  from {
+    background-color: var(--stdarkhighlight);
+  }
+  to {
+    background-color: var(--dark);
+  }
+}
+
 .showcase img {
   max-width: 100%;
 }
