@@ -60,3 +60,16 @@ background-image: url(/assets/img/Frame\ 2.svg);
 .date{
   text-align: center;
 }
+
+.center{
+  animation: center_in 0.3s ease-in-out;
+}
+
+@keyframes center_in {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}

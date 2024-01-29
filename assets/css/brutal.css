@@ -17,6 +17,10 @@
   --baseFontSize: 1vw;
 }
 
+body{
+  background-color: var(--dark);
+}
+
 center{
   padding: 5px;
   margin: 5px;
