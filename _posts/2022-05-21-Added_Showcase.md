@@ -3,7 +3,7 @@ layout: post
 title: "Added Showcase"
 date: 2022-05-21
 category: jekyll
-img: /assets/img/21052022.svg
+img: /assets/img/2022.svg
 ---
 I added a showcase CSS item.
 <div class="showcase">

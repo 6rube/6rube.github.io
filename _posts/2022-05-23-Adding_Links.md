@@ -3,7 +3,7 @@ layout: post
 title: "Adding Links"
 date: 2022-05-23
 category: jekyll
-img: /assets/img/23052022.svg
+img: /assets/img/2022.svg
 ---
 
 When I was looking for some inspirations for this website I found the link list from Gpfault.

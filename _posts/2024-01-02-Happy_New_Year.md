@@ -3,7 +3,7 @@ layout: post
 title: "Happy New Year"
 date: 2024-01-02
 category: misc
-img: /assets/img/20240102.svg
+img: /assets/img/2024.svg
 ---
 
 ## Welcome to the year 2024.
