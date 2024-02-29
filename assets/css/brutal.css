@@ -733,25 +733,26 @@ h4:hover {
 /* Incanvas */
 
 .incanvas {
-  top: 1%;
   list-style-type: none;
   padding: 0 !important;
-  margin-left: 1%;
+  margin-left: 5px;
+  margin-right: 1px;
+  margin-right: 1px;
   width: 25%;
   background-color: var(--stdarkhighlight);
   backdrop-filter: blur(15px);
   border: var(--thin) solid var(--darkhighlight);
   border-radius: var(--baseboderradius);
   position: fixed;
-  height:98%;
+  height: calc(100% - 15px);
   overflow: auto;
 }
 
 .incanvasObject {
-  margin: auto;
+  margin-leaft: 5px;
+  margin-top: 5px;
   padding: 0 !important;
-  margin-top: 1%;
-  margin-left: 26%!important;
+  margin-left: calc(25% + 10px) !important;
 }
 
 .incanvas a {
@@ -761,7 +762,6 @@ h4:hover {
   padding: var(--basepadding);
   text-decoration: none;
   width: 89%;
-  margin: 5px;
 }
 
 .incanvas a.active {
@@ -796,7 +796,6 @@ h4:hover {
 .showcase {
   border: var(--thin) solid var(--darkhighlight);
   border-radius: var(--baseboderradius);
-  margin: 5px;
   width: fit-content;
   display: inline-block;
   box-sizing: border-box;
