@@ -2,7 +2,7 @@
 layout: post
 title: "Writing A VSCode Extension"
 date: 2024-01-02
-category: misc
+category: go, vscode
 img: /assets/img/govscode.svg
 ---
 
