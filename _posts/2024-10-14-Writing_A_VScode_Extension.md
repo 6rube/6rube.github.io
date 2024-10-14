@@ -3,7 +3,7 @@ layout: post
 title: "Writing A VSCode Extension"
 date: 2024-01-02
 category: misc
-img: /assets/img/2024.svg
+img: /assets/img/govscode.svg
 ---
 
 I recently started to explore Go more extensively. Go has some really cool features, and its standard library is a pleasure to use, especially with goroutines. To get more familiar with the language, I began developing a small CLI game. However, I encountered some frustration when Visual Studio Code (VSCode) automatically deleted imports from my main Go file. This happened because I had a standard VSCode extension that removes unused or broken imports.
