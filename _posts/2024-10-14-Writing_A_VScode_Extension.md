@@ -46,3 +46,5 @@ activeEditor.edit(editBuilder => {
 So, after just 30 minutes, I was able to create an extension that automatically creates local modules for me.
 I had never thought it would be so easy. But now I understand why so many people love hacking their text editor.
 From now on, I will probably create more extensions since it was that easy.
+
+You can find the Extension here https://github.com/6rube/go-auto-module.
